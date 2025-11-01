@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bento Box UI Prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="brand">
+      <span class="brand-icon" aria-hidden="true">🍱</span>
+      <span class="brand-name">BentoLab</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#what">What</a></li>
+        <li><a href="#why">Why</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+    <button class="cta-button">Get the UI Kit</button>
+  </header>
+
+  <main>
+    <section class="hero" id="what">
+      <div class="hero-text">
+        <p class="badge">Design trend primer</p>
+        <h1>Bento box layouts turn static pages into playful canvases.</h1>
+        <p class="lede">
+          Arrange interface cards like chef-crafted courses: mix generous whitespace,
+          soft depth and bold gradients to guide focus while keeping interactions light.
+        </p>
+        <div class="hero-actions">
+          <a class="primary" href="#gallery">Explore components</a>
+          <a class="secondary" href="#principles">See the principles</a>
+        </div>
+      </div>
+      <div class="hero-preview" role="presentation">
+        <div class="stack">
+          <div class="tile insights">
+            <h2>Live insights</h2>
+            <p>Micro charts and metrics nestled inside rounded shells keep dashboards tactile.</p>
+            <div class="stat-row">
+              <div>
+                <span class="label">Conversion</span>
+                <span class="value">+12.4%</span>
+              </div>
+              <div>
+                <span class="label">Sessions</span>
+                <span class="value">38k</span>
+              </div>
+            </div>
+          </div>
+          <div class="tile mood">
+            <h2>Palette mood</h2>
+            <div class="swatch-grid">
+              <span class="swatch" data-label="Iridescent Sky"></span>
+              <span class="swatch" data-label="Electric Lilac"></span>
+              <span class="swatch" data-label="Fresh Foam"></span>
+              <span class="swatch" data-label="Midnight Ink"></span>
+            </div>
+          </div>
+          <div class="tile testimonial">
+            <p class="quote">“Bento UI lets us surface complex ideas with delightfully lightweight blocks.”</p>
+            <p class="author">— Alma Ruiz, Product Design Lead</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles" id="principles">
+      <h2>What makes Bento UI different?</h2>
+      <div class="principle-grid">
+        <article class="principle">
+          <h3>Soft depth</h3>
+          <p>Layer translucent cards over blurred gradients to create depth without heavy drop shadows.</p>
+        </article>
+        <article class="principle">
+          <h3>Playful geometry</h3>
+          <p>Combine varied tile sizes and generous padding so each block feels like a curated course.</p>
+        </article>
+        <article class="principle">
+          <h3>Micro-interactions</h3>
+          <p>Use hover lifts and animated glass highlights to suggest tactility without overwhelming users.</p>
+        </article>
+        <article class="principle">
+          <h3>Colorful minimalism</h3>
+          <p>Blend bright gradients with muted neutrals to keep layouts vibrant yet calm.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery" aria-label="Bento UI card gallery">
+      <h2>Component sampler</h2>
+      <div class="gallery-grid">
+        <article class="card wide">
+          <header>
+            <p class="eyebrow">Spotlight</p>
+            <h3>Launch announcement</h3>
+          </header>
+          <p>Stack hero imagery with a bold gradient halo and layered glass chips for highlights.</p>
+          <button class="ghost-button">View concept</button>
+        </article>
+        <article class="card tall">
+          <h3>Team roster</h3>
+          <ul class="avatar-list">
+            <li>
+              <img src="https://i.pravatar.cc/72?img=32" alt="Portrait of Riley" />
+              <div>
+                <p>Riley</p>
+                <span>Brand designer</span>
+              </div>
+            </li>
+            <li>
+              <img src="https://i.pravatar.cc/72?img=12" alt="Portrait of Naya" />
+              <div>
+                <p>Naya</p>
+                <span>Motion specialist</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Audio drop</h3>
+          <p>Rounded waveform container with floating controls anchors immersive storytelling.</p>
+          <div class="waveform" aria-hidden="true"></div>
+        </article>
+        <article class="card">
+          <h3>Wellness check-in</h3>
+          <p>Progress ring combined with glass chips keeps health moments approachable.</p>
+          <div class="progress" role="img" aria-label="Progress 68%">
+            <svg viewBox="0 0 36 36" aria-hidden="true">
+              <defs>
+                <linearGradient id="progress-gradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#7f5dff" />
+                  <stop offset="100%" stop-color="#1fb9ff" />
+                </linearGradient>
+              </defs>
+              <path class="background" d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+              <path class="indicator" stroke-dasharray="68 100" d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+            </svg>
+            <span>68%</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>Crafted as a design exploration of the Bento Box UI trend.</p>
+    <a href="mailto:hello@bentolab.design">hello@bentolab.design</a>
+  </footer>
+</body>
+</html>
