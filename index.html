@@ -20,6 +20,7 @@
         <li><a href="#what">What</a></li>
         <li><a href="#why">Why</a></li>
         <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#style-guide">Style guide</a></li>
       </ul>
     </nav>
     <button class="cta-button">Get the UI Kit</button>
@@ -144,6 +145,79 @@
               <path class="indicator" stroke-dasharray="68 100" d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
             </svg>
             <span>68%</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="style-guide" id="style-guide" aria-labelledby="style-guide-title">
+      <div class="style-guide-header">
+        <p class="badge">Design tokens</p>
+        <h2 id="style-guide-title">Style guide</h2>
+        <p class="lede">
+          A snapshot of the visual language that shapes BentoLab’s interface—from typography and color to the tactile surface
+          treatments that give each tile its lift.
+        </p>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-card typography">
+          <h3>Typography</h3>
+          <p>
+            Manrope leads with 400, 600 and 700 weights for hierarchy. Pairing it with system fonts keeps labels crisp and body
+            copy friendly across platforms.
+          </p>
+          <div class="type-stack" aria-hidden="true">
+            <span class="type-display">Manrope 700</span>
+            <span class="type-body">Manrope 400</span>
+          </div>
+        </article>
+        <article class="guide-card colors">
+          <h3>Color palette</h3>
+          <p>
+            A misty base gradient supports glassmorphism layers while vibrant violet-to-aqua accents drive interaction and
+            motion cues.
+          </p>
+          <div class="swatch-list" role="img" aria-label="Color swatches showing Iridescent Sky, Electric Lilac, Fresh Foam, Midnight Ink">
+            <span class="swatch" data-label="Iridescent Sky"></span>
+            <span class="swatch" data-label="Electric Lilac"></span>
+            <span class="swatch" data-label="Fresh Foam"></span>
+            <span class="swatch" data-label="Midnight Ink"></span>
+          </div>
+        </article>
+        <article class="guide-card spacing">
+          <h3>Spacing & radius</h3>
+          <p>
+            Tiles rest on a 40px grid with 16–32px radii. Compact badges use 6px padding while cards expand to 24px for airy,
+            tactile buffers.
+          </p>
+          <div class="spacing-demo" aria-hidden="true">
+            <div class="spacing-ring large">32px</div>
+            <div class="spacing-ring medium">24px</div>
+            <div class="spacing-ring small">16px</div>
+          </div>
+        </article>
+        <article class="guide-card effects">
+          <h3>Effects & components</h3>
+          <p>
+            Soft shadows, blur and 2px hover lifts add depth. Cards, ghost buttons and progress rings reuse shared tokens for
+            cohesion.
+          </p>
+          <div class="component-stack" aria-hidden="true">
+            <div class="component-card">Card shell</div>
+            <button class="ghost-button">Ghost button</button>
+            <div class="mini-progress">
+              <svg viewBox="0 0 36 36" aria-hidden="true">
+                <defs>
+                  <linearGradient id="progress-gradient-mini" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#7f5dff" />
+                    <stop offset="100%" stop-color="#1fb9ff" />
+                  </linearGradient>
+                </defs>
+                <path class="background" d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+                <path class="indicator" stroke-dasharray="68 100" d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+              </svg>
+              <span>68%</span>
+            </div>
           </div>
         </article>
       </div>
